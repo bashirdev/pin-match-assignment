@@ -40,12 +40,12 @@ if(isMatchcal.value != isMatchNumber){
     deactiveDisplay.style.display="block";
     const activeDisplay= document.getElementById('notify-active');
     activeDisplay.style.display="none";
-    let actionleft=[0,2,3,4];
+    let actionleft=[1,2,3];
     // let checkString='sorry',
    for (let i = 0; i <actionleft.length; i++) {
         var actionRemaing = actionleft[i];
         if(actionRemaing ==1){
-            actionRemaing=document.getElementById('action-leftId').innerHTML="2 try left";
+            document.getElementById('action-leftId').innerHTML="2 try left";
             console.log(actionRemaing);
         }
         if(actionRemaing ==2){
